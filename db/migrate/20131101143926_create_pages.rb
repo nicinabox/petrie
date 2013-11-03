@@ -1,6 +1,6 @@
-class CreatePetriePages < ActiveRecord::Migration
+class CreatePages < ActiveRecord::Migration
   def change
-    create_table :petrie_pages do |t|
+    create_table :pages do |t|
       t.string :title
       t.text :body
 
