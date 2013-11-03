@@ -1,4 +1,4 @@
-Petrie::Engine.routes.draw do
+Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'home', to: redirect('/')

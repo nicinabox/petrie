@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Petrie::Engine => "/"
+  # mount Petrie::Engine => "/"
 end
