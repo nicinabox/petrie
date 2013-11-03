@@ -1,8 +1,11 @@
 Description:
-    Explain the generator
+    Copies page model, views, and controller into app.
 
 Example:
-    rails generate install Thing
+    rails generate petrie:install
 
     This will create:
-        what/will/it/create
+        app/views/pages/home.html.erb
+        app/views/pages/show.html.erb
+        app/controllers/pages_controller.rb
+        app/models/page.rb
