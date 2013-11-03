@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Petrie::VERSION
   s.authors     = ["Nic Aitch"]
   s.email       = ["nic@nicinabox.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/nicinabox/petrie"
   s.summary     = "Pages for your Rails app"
   s.description = "Say 'ptree'"
 
