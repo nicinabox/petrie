@@ -6,10 +6,11 @@ module Petrie
     end
   end
 
-  # describe 'Unmatched pages' do
-  #   it "return 404" do
-  #     get '/nerp'
-  #     expect(response.status).to eq(404)
-  #   end
-  # end
+  describe 'Unmatched pages' do
+    it "return 404" do
+      expect {
+        get '/nerp'
+      }.to raise_error(ActionController::RoutingError)
+    end
+  end
 end

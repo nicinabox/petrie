@@ -17,8 +17,13 @@ module Petrie
       page_slugs = params[:page].split(/\//).reverse
       candidates = Page.where(slug: page_slugs.first)
 
+      return not_found if candidates.empty?
       return candidates.first if candidates.count == 1
 
+      resolve_duplicates(page_slugs, candidates)
+    end
+
+    def resolve_duplicates(page_slugs, candidates)
       page_slugs.shift
       page_slugs.each do |page|
         parent_candidate = Page.friendly.find(page)
@@ -26,7 +31,6 @@ module Petrie
         candidates.each do |c|
           return c if parent_candidate.is_ancestor_of?(c)
         end
-
       end
     end
 

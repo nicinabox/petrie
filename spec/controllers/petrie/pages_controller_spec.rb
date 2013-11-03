@@ -27,6 +27,14 @@ module Petrie
         get :show, use_route: 'petrie', page: 'locations/new-york/jobs'
         expect(assigns(:page)).to eq(jobs3)
       end
+
+      # describe 'Unmatched pages' do
+      #   it "return 404" do
+      #     get :show, use_route: 'petrie', page: 'nerp'
+      #     response.response_code.should == 404
+      #     # expect(response).to raise_error(ActionController::RoutingError)
+      #   end
+      # end
     end
   end
 end
