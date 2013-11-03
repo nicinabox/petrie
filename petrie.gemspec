@@ -7,11 +7,11 @@ require "petrie/version"
 Gem::Specification.new do |s|
   s.name        = "petrie"
   s.version     = Petrie::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Nic Aitch"]
+  s.email       = ["nic@nicinabox.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Petrie."
-  s.description = "TODO: Description of Petrie."
+  s.summary     = "Pages for your Rails app"
+  s.description = "Say 'ptree'"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
