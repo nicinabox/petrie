@@ -2,6 +2,8 @@
 
 Pages for your Rails app. Includes support for ActiveAdmin and Sir Trevor. Built for Rails 4.
 
+![Admin](screenshot-activeadmin.png?raw=true)
+
 ## Install
 
     gem install petrie
