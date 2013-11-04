@@ -1,0 +1,87 @@
+.sortable-tree {
+  width: 75%;
+  ol {
+    border-left: 1px dashed silver;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+
+  p {
+    margin-right: 75px;
+    padding: 5px;
+  }
+
+  .item {
+    position: relative;
+    background-color: #f7f7f7;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #efefef));
+    background-image: -webkit-linear-gradient(#f7f7f7, #efefef);
+    background-image: linear-gradient(#f7f7f7, #efefef);
+    border-bottom: 1px solid #dedede;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    &:hover {
+      background: #eee;
+    }
+    > a {
+      text-decoration: none;
+      display: block;
+      margin-left: 0;
+      padding: 10px 15px;
+      font-size: 16px;
+      &:hover{
+        background: #eee;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .placeholder {
+    background-color: #fff8cb;
+    border-bottom: 1px solid #FFF298;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    height: 40px;
+  }
+
+  .ui-nestedSortable-error {
+    background: #FAA;
+    color: #8a1f11;
+  }
+
+  .handle {
+    cursor: move;
+    padding: 10px;
+    color: #ccc;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.2;
+    float: left;
+    &:hover {
+      color: #4e5357;
+    }
+  }
+
+  .controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    a {
+      padding: 10px;
+      color: #aaa;
+      font-size: 16px;
+      text-decoration: none;
+      line-height: 1.2;
+      &:hover {
+        color: #4e5357;
+      }
+      &.delete{
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
