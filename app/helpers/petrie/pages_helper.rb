@@ -8,7 +8,7 @@ module Petrie
       @children ||= ancestor.children
     end
 
-    def page_path(page)
+    def petrie_page_path(page)
       page.self_and_ancestors.collect { |a|
         a.slug unless a.home?
       }.unshift('').join('/')
