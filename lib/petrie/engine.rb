@@ -1,5 +1,6 @@
 require 'friendly_id'
 require 'awesome_nested_set'
+require 'the_sortable_tree'
 
 module Petrie
   class Engine < ::Rails::Engine
