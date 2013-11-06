@@ -1,5 +1,13 @@
 module Petrie
   describe PagesController do
+    describe 'GET home' do
+      it "assigns @page" do
+        page = Page.create(title: 'home')
+        get :home, use_route: 'petrie'
+        expect(assigns(:page)).to eq(page)
+      end
+    end
+
     describe 'GET show' do
       it "assigns @page" do
         page = Page.create(title: 'about')
