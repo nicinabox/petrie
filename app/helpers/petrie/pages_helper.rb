@@ -10,7 +10,7 @@ module Petrie
 
     def page_path(page)
       page.self_and_ancestors.collect { |a|
-        a.slug unless a.slug == 'home'
+        a.slug unless a.home?
       }.unshift('').join('/')
     end
   end

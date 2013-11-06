@@ -13,5 +13,13 @@ module Petrie
       return parent.top_ancestor if parent
       self
     end
+
+    def top_ancestor?
+      self == top_ancestor
+    end
+
+    def home?
+      slug == 'home'
+    end
   end
 end

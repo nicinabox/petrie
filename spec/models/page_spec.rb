@@ -35,5 +35,14 @@ module Petrie
       end
     end
 
+    describe '#top_ancestor?' do
+      it 'returns true if page is #top_ancestor' do
+        parent = Page.create(title: 'Parent Page')
+        child = Page.create(title: 'Child Page', parent_id: parent.id)
+        parent.top_ancestor?.should be_true
+        child.top_ancestor?.should_not be_true
+      end
+    end
+
   end
 end
