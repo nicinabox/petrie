@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'home', to: redirect('/')
-  get '*page', to: 'pages#show', format: false, as: :page
+  get '*page', to: 'pages#show',
+               format: false,
+               as: :page
 
   if defined? ActiveAdmin
     namespace :admin do
