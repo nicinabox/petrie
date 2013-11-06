@@ -19,11 +19,17 @@ Then run the installer
 
 ## ActiveAdmin
 
+**Heads up!** You need to have ActiveAdmin installed first!
+
     rails g petrie:activeadmin
 
 # Caution
 
 Petrie includes a root route to `pages#home`. Generally, this shouldn't be a problem unless you don't want to use a marketing home page as your root.
+
+# Known issues
+
+* There are missing blocks in sir-trevor-rails that will cause template errors. The workaround is to create these blocks in your application in `app/views/sir-trevor/blocks` until this gets fixed.
 
 ## License
 
