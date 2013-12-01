@@ -15,17 +15,17 @@ module Petrie
       end
     end
 
-    describe 'page_path' do
+    describe 'petrie_page_path' do
       it "returns self and ancestors" do
         parent = Page.create(title: 'Motorcycles')
         child = Page.create(title: 'Honda', parent_id: parent.id)
 
-        helper.page_path(child).should eq '/motorcycles/honda'
+        helper.petrie_page_path(child).should eq '/motorcycles/honda'
       end
 
       it "returns / for home page" do
         page = Page.create(title: 'Home')
-        helper.page_path(page).should eq '/'
+        helper.petrie_page_path(page).should eq '/'
       end
     end
   end
