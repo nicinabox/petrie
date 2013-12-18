@@ -34,3 +34,7 @@ Petrie includes a root route to `pages#home`. Generally, this shouldn't be a pro
 ## License
 
 MIT License
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nicinabox/petrie/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
